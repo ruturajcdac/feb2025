@@ -1,0 +1,35 @@
+
+Output:
+
+Level 1
+Level 2
+Level 3
+Unknown level
+
+Intended output: 
+ 
+Level 1
+
+
+Explaination:
+
+How the Code Executes:
+
+level is initialized to 1.
+The switch statement finds a match at case 1.
+"Level 1" is printed.
+No break: Execution continues to the next case block (case 2).
+"Level 2" is printed.
+No break: Execution continues to the next case block (case 3).
+"Level 3" is printed.
+No break: Execution continues to the default block.
+"Unknown level" is printed.
+The switch statement ends.
+
+Solution:
+Q: The Role of break:
+
+A: The break statement's purpose within a switch statement is to terminate the execution of the switch block immediately.
+When a break is encountered, the program jumps to the statement following the switch block.
+Without break, the program "falls through" to the next case (or default) regardless of whether the case value matches the switch expression.
+ 

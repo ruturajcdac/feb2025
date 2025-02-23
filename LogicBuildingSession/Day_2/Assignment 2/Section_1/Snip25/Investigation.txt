@@ -1,0 +1,25 @@
+Error:
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\SNIP_25>javac Switch.java
+Switch.java:4: error: incompatible types: possible lossy conversion from double to int
+                switch(score) {
+                      ^
+1 error
+
+Explaination:
+
+the switch statement does not support double values as the expression to be switched on. And we are comparing the double variable with integer cases.
+
+Solution:
+Q: What does the error tell you about the types allowed in switch expressions?
+A:
+Allowed switch Types (Pre-Java 17):
+
+1) byte, short, char, int
+2) enum types
+3) String (from Java 7 onwards)
+
+Q: How can you modify the code to make it work?
+A: make the variable to be checked as int
+
+ 

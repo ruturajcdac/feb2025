@@ -1,0 +1,18 @@
+
+Error: 
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip21>javac Main.java
+Main.java:17: error: reached end of file while parsing
+}
+ ^
+1 error
+
+Explaination:
+
+In the code snippet, the compiler reports an error " reached end of file while parsing " because the main method's closing brace is absent.
+
+
+
+Solution:
+Q : What does the compiler say about mismatched braces?
+A: 
+When the compiler encounters mismatched braces (like a missing closing brace), it produces a syntax error.

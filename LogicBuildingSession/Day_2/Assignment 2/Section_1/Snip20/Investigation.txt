@@ -1,0 +1,31 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip20>javac Main.java
+Main.java:19: error: ';' expected
+                System.out.println("Hello, World")
+                                                  ^
+1 error
+
+Explaination:
+
+Missing Semicolon: The System.out.println("Hello, World") statement is missing a semicolon (;) at the end.
+
+Q: Why the Exception Occurs:
+
+1) Division by Zero: The line int result = a / b; attempts to divide the integer a (10) by the integer b (0).
+
+2) Mathematical Undefinedness: In mathematics, division by zero is undefined. There is no finite number that, when multiplied by zero, results in a non-zero number.
+
+3) Java's Behavior: Java, like most programming languages, cannot represent or handle undefined mathematical operations. When the JVM encounters a division by zero with integer operands, it throws an ArithmeticException.
+
+Solution:
+Q : How the Missing Semicolon Affects Compilation:
+A: 
+1) Compilation Failure: The Java compiler requires that most statements end with a semicolon. The semicolon acts as a statement terminator, signaling to the compiler that the statement is complete.
+
+2) Error Message: When the compiler encounters the missing semicolon, it will generate a compilation error. The error message will typically indicate that a semicolon is expected at the end of the line or before the closing curly brace (}).
+
+3) No Executable Code: Because of the syntax error, the compiler will not be able to generate the .class file (the compiled bytecode). Therefore, the program will not be executable.
+
+4) The compiler will not know where one statement ends and the next begins, so it is unable to parse the code correctly.

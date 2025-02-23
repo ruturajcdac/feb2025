@@ -1,0 +1,20 @@
+Error:
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip26>javac Switch.java
+Switch.java:28: error: duplicate case label
+                        case 5:
+                        ^
+1 error
+
+Explaination:
+
+The error "duplicate case label" indicates that we have the same case value appearing more than once within our switch statement.
+
+Solution:
+Q: Why "Duplicate Case Label" is an Error ?
+
+A: Switch Statement Logic:
+The switch statement is designed to execute a specific block of code based on the value of the expression being switched.
+Each case label represents a unique value that the switch expression might have.
+If you have two case labels with the same value, the compiler becomes confused: "Which block of code should I execute if this value occurs?"
+ 

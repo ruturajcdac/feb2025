@@ -1,0 +1,33 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip22>javac Main.java
+Main.java:15: error: illegal start of expression
+                static void displayMessage() {
+                ^
+Main.java:19: error: class, interface, or enum expected
+}
+^
+2 errors
+
+Explaination:
+
+The primary syntax error in the provided Java code snippet is that a method (displayMessage()) is being declared inside another method (main()). In standard Java, you cannot define a method within another method.
+
+The compiler sees static and expects it to be part of a class member declaration, not something inside the main method.
+
+Main.java:19: error: class, interface, or enum expected }
+
+This second error, "class, interface, or enum expected," occurs because the compiler, after encountering the illegal method declaration, gets confused about the overall structure of the class. When it reaches the closing brace of the main method, it's still expecting to find a valid class member declaration. Because it didn't find one, it throws this error.
+Essentially, the compiler is trying to recover from the first error, but it's now in a state where it's expecting a different type of code structure.
+
+
+Solution:
+ 
+Q: Can a method be declared inside another method?
+
+A: No, in standard Java, you cannot directly declare a method inside another method.
+However, there are ways to achieve similar functionality:
+1) Local Classes: You can define a class within a method (a local class), and that local class can have its own methods.
+
+2) Lambda Expressions: In Java 8 and later, lambda expressions can be used to create anonymous functions within methods.

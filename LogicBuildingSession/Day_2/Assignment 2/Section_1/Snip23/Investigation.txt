@@ -1,0 +1,34 @@
+
+Output:
+
+Value is 2
+Value is 3
+Default case
+
+Intended output: 
+ 
+Value is 2
+
+
+Explaination:
+
+Switch Statement Behavior:
+
+When a case matches the switch expression's value, execution begins at that case.
+Without break, execution "falls through" to the subsequent case blocks, regardless of whether their values match. This is called "fall-through" behavior.
+The default case is executed if no other case matches.
+
+
+Solution:
+Q: Why "Value is 2" and then "Default case":
+A: 
+1) "value" is 2, so the case 2 block is executed, printing "Value is 2".
+Because there's no break after the println statement in case 2, execution falls through to case 3 and then to the default case.
+2) Since there is no break in case 3, the default case is also executed.
+
+
+
+Q: How to Prevent Fall-Through:
+A: 
+Use the break statement at the end of each case block (and before the default block if needed). This will terminate the switch statement once a matching case is executed.
+ 

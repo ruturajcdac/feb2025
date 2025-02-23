@@ -1,0 +1,29 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip19>java Main
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at Main.main(Main.java:12)
+
+Explaination:
+
+It throws an ArithmeticException at runtime. Specifically, it will be a java.lang.ArithmeticException: / by zero.
+
+Q: Why the Exception Occurs:
+
+1) Division by Zero: The line int result = a / b; attempts to divide the integer a (10) by the integer b (0).
+
+2) Mathematical Undefinedness: In mathematics, division by zero is undefined. There is no finite number that, when multiplied by zero, results in a non-zero number.
+
+3) Java's Behavior: Java, like most programming languages, cannot represent or handle undefined mathematical operations. When the JVM encounters a division by zero with integer operands, it throws an ArithmeticException.
+
+Solution:
+Q: Why Division by Zero Causes an Issue in Java:
+
+1) Mathematical Inconsistency: Allowing division by zero would lead to mathematical inconsistencies and unpredictable behavior.
+
+2) Preventing Errors: Throwing an exception is a way for Java to signal that an error has occurred. This helps programmers identify and correct potential problems in their code.
+
+3) Floating-Point Division (Different Behavior): It's worth noting that if a and b were double or float types, division by zero would not throw an exception. Instead, it would result in Infinity (if a is positive), -Infinity (if a is negative), or NaN (Not-a-Number) if both are zero. Integer division behaves differently to floating point division.
+
+4) Program Stability: By forcing a crash with an exception, the program is prevented from continuing with potentially corrupted or incorrect data.

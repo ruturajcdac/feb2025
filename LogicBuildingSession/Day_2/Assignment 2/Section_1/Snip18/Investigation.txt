@@ -1,0 +1,13 @@
+
+Error: 
+
+No error
+
+
+
+Solution:
+Operator Precedence: Java follows standard operator precedence rules. Multiplication (*) has higher precedence than addition (+).
+Multiplication: b * 2 is evaluated first. b is 5, so 5 * 2 = 10.
+Addition: a + 10 is then evaluated. a is 10, so 10 + 10 = 20.
+Assignment: The result (20) is assigned to the int variable result.
+Output: The code prints the value of result, which is 20.
