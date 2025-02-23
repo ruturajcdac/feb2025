@@ -1,0 +1,14 @@
+
+Error:
+
+E:\POST BE\CDAC\PrepCourse\Day 3\Section_1\Snip10>javac IncorrectWhileLoopControl.java
+IncorrectWhileLoopControl.java:16: error: incompatible types: int cannot be converted to boolean
+        while (num = 10) {
+                   ^
+1 error
+
+Q: Why does the loop execute indefinitely? What is wrong with the loop condition?
+A: The loop does not execute indefinitely because the condition is not defined correct. Assignment operator is used instead of any relational operator.
+If we want to print 10 to 1 in reverse we can change the condition to num > 0.
+
+

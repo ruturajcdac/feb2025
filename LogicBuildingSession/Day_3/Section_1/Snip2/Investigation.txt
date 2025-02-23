@@ -1,0 +1,7 @@
+Q: Why does the loop not execute as expected?
+
+A: In the condition part of the loop, instead of any relational operator, assignment operator is used, and gives the error as "incompatible types: int cannot be converted to boolean"
+
+Q: What is the issue with the condition in the `while` loop? 
+
+A: Instead of checking for any condition, in the condition section the variable is getting assigned a value, so there should have been a relational operator like "while(count>=0)".

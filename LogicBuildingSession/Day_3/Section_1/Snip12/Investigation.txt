@@ -1,0 +1,23 @@
+Error:
+
+E:\POST BE\CDAC\PrepCourse\Day 3\Section_1\Snip12>javac LoopVariableScope.java
+LoopVariableScope.java:18: error: cannot find symbol
+            x = i * 2;
+            ^
+  symbol:   variable x
+  location: class LoopVariableScope
+LoopVariableScope.java:20: error: cannot find symbol
+        System.out.println(x); // Error: 'x' is not accessible here
+                           ^
+  symbol:   variable x
+  location: class LoopVariableScope
+2 errors
+
+
+Q: Why does the variable 'x' cause a compilation error? 
+
+A: As x is declared inside the for loop, its scope is limited inside it only, be in our code we are trying to access it outside the for loop.
+
+Q: How does scope...
+A: 
+

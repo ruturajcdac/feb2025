@@ -1,0 +1,16 @@
+
+Q: Why does "Done" print only once, outside the loop? 
+A: As we have not used { } after the for loop, the statement immediately after the for statement is only considered as body of for loop, hence "Done" is printed only once as it is not the part of foor loop. 
+
+Q: How should the loop body be enclosed to include all statements within the loop? 
+A: 
+Initially :
+for (int i = 0; i < 5; i++)
+	System.out.println(i);
+	System.out.println("Done");
+
+Correction :
+for (int i = 0; i < 5; i++){
+	System.out.println(i);
+	System.out.println("Done");
+}// enclosing the statements with {}

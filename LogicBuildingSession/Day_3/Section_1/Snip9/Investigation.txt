@@ -1,0 +1,14 @@
+
+
+Q: Why does the loop print unexpected results or run infinitely?
+A: As the variable is updated by 2 at every iteration, some numbers are skipped, so unexpected results are seen.
+
+Q: How should the loop update expression be corrected?
+A: In order to print the numbers sequentially, we should increment the variable by 1.
+
+Initially: i += 2
+
+Later: i++
+
+
+

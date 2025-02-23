@@ -1,0 +1,16 @@
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 3\Section_1\Snip7>javac UninitializedWhileLoop.java
+UninitializedWhileLoop.java:16: error: variable count might not have been initialized
+                while (count < 10) {
+                       ^
+1 error
+
+
+
+Q: Why does this code produce a compilation error? 
+A: The count variable is not initialized to any value, hence it is not available for the condition of while loop.
+
+Q: What needs to be done to initialize the loop variable properly? 
+A: The variable has to assigned some value that does not result into any logical error (infinite loop)
+

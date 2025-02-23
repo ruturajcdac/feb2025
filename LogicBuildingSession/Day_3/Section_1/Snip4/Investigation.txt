@@ -1,0 +1,11 @@
+Goal: To print 1 to 9
+Actual Output : 1 to 10
+
+To do : adjust the for loop
+
+
+Q: What is the issue with the loop boundaries? 
+A: As the requirement is to print 1 to 9, the loop enters next iteration and prints extra.
+
+Q: How should the loop be adjusted to meet the expected output? 
+A: instead of "i <= 10" using "i<10"

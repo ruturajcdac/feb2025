@@ -1,0 +1,12 @@
+
+
+
+Q: What will be the output of this loop?
+A:  0
+    2
+    4
+
+Q: How should the loop variable be updated to achieve the desired result? 
+A: Instead of i+=2, I used i+=1 to print the numbers one by one
+
+

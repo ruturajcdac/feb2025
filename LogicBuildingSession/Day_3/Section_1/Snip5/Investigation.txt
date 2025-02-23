@@ -1,0 +1,7 @@
+
+Q: Why does this loop not print numbers in the expected order? 
+A: Instead of decrementing, the loop increments the variable hence the condition is always true as i>=0 every iteration.
+
+Q: What is the problem with the initialization and update statements in the `for` loop? 
+A: We can use decrement operator to reduce the value of the variable by 1 at every iteration to pring the numbers in the expected order.
+

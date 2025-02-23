@@ -1,0 +1,7 @@
+Q: Why does the loop execute infinitely?
+
+A: As the condition is always true, and num is always greater than 0, so it executes infinitely.
+
+Q: What is wrong with the loop condition in the `dowhile` loop? 
+
+A: Due to logical error, the loop executes infinitely, if the condition would have been, "num<0" then it would have excuted only once because after entry into the loop the num value is incremented from 0 to 1, hence the condition would have been false.

@@ -1,0 +1,31 @@
+
+
+Q: Why does this loop print unexpected numbers? 
+A: It prints just 1, because the variable is initialized to 1 and then decremented inside the body and in the condition part as num is 0, condition is false hence exits the loop.
+
+Q: What adjustments are needed to print the numbers from 1 to 5? 
+A:
+
+Initially:
+public class OffByOneDoWhileLoop {
+    public static void main(String[] args) {
+        int num = 1;
+        do {
+            System.out.println(num);
+            num--;
+        } while (num > 0);
+    }
+}
+
+Later:
+public class OffByOneDoWhileLoop {
+    public static void main(String[] args) {
+        int num = 1;
+        do {
+            System.out.println(num);
+            num++;                    // changed it to increment
+        } while (num < 6);	      // changed the condition to num < 6
+    }
+}
+
+

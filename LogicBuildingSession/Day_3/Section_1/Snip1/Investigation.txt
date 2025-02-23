@@ -1,0 +1,6 @@
+Q: Why does this loop run infinitely?
+A: As the variable i is initialized to 0 and during each iteration decremented by 1, the given condition is always true as i is always less than 10, so the SOP statement inside the loop, runs infinitely.
+
+Q: How should the loop control variable be adjusted?
+A: In order to avoid the loop from running infinitely, the variable should be made to be more than 1 so that after some decrement(s), the condition will become false.
+2nd Approach - We can also increment the variable instead of decrementing it.
