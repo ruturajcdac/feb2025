@@ -1,0 +1,17 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip8>javac Main.java
+Main.java:15: error: ')' expected
+                System.out.println("Hello, World!"
+                                                  ^
+1 error
+
+
+Error explaination:
+Missed the closing paranthesis of SOP statement and ;
+
+
+
+Explaination:
+The Java compiler will detect these errors and halt the compilation process. Because of these errors, the compiler will not be able to generate a .class file (the compiled bytecode) that can be executed by the Java Virtual Machine (JVM). 

@@ -1,0 +1,18 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip17>javac Main.java
+Main.java:20: error: illegal start of expression
+                int result = a ** b;
+                                ^
+1 error
+
+Explaination:
+Invalid Operator: The ** operator, which is commonly used for exponentiation (raising a number to a power) in languages like Python, is not a valid operator in Java. Java does not have a built-in operator for exponentiation.
+
+Solution:
+Q: Why ** Is Not Valid in Java:
+A: 
+1) Language Design: Java's design philosophy prioritizes simplicity and clarity. While exponentiation is a common mathematical operation, the language designers chose not to include a dedicated exponentiation operator.
+
+2) Alternative: Math.pow(): Instead of **, Java provides the Math.pow() method in the Math class for performing exponentiation. This method takes two double arguments (base and exponent) and returns a double result.

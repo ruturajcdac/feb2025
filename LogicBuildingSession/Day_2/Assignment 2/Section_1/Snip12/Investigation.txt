@@ -1,0 +1,12 @@
+
+Error: 
+
+The code inside the loop's body (the System.out.println() statement) executes repeatedly, forever (or until we manually stop the program).  The program will never terminate on its own. It will continuously print "Infinite Loop" to the console.
+
+
+Explaination:
+Q: How can you avoid infinite loops?
+A:
+1) Use of termination case :  The most common way to control a loop is to use a condition that will eventually evaluate to false. 
+
+2) Use a break Statement: We can use the break statement to exit a loop prematurely, even if the loop's condition is still true.  This is useful when we have a specific condition within the loop that signals that it should terminate.

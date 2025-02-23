@@ -1,0 +1,30 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip10>javac Main.java
+Main.java:25: error: non-static method display() cannot be referenced from a static context
+                display();
+                ^
+Main.java:26: error: non-static method display(int) cannot be referenced from a static context
+                display(5);
+                ^
+2 errors
+
+
+Error explaination:
+1)The main method is declared as static. This means it belongs to the class itself, not to any specific instance (object) of the class.
+
+2)The display() methods are instance methods (they are not declared as static). They belong to objects of the Main class.
+
+3)Inside the main method, we're trying to call display() directly, as if it were a static method. However, we must call instance methods on an object of the class.
+
+
+
+Explaination:
+Q: Is Method Overloading Allowed?
+A:
+Yes, method overloading is allowed in Java. We have two methods named display:
+
+public void display() (takes no parameters)
+public void display(int num) (takes an integer parameter)
+The compiler can distinguish between these methods based on their parameter lists (the number and types of parameters).  This is the core concept of method overloading.  It allows us to have multiple methods with the same name but different signatures (parameter lists) within the same class.

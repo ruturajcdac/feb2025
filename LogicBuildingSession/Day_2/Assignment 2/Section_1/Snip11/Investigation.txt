@@ -1,0 +1,21 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip11>java Main
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+        at Main.main(Main.java:26)
+
+Error explaination:
+It throws a java.lang.ArrayIndexOutOfBoundsException at runtime, due to accessing the index of the array which does not exist.
+
+
+
+
+Explaination:
+Q: What runtime exception do you encounter? Why does it occur?
+A:
+1) Array Bounds: The arr array in the code has three elements. Therefore, the valid indices are 0, 1, and 2.
+
+2) Accessing Invalid Index: The code attempts to access arr[5]. This index is outside the bounds of the array. There is no element at index 5.
+
+3) ArrayIndexOutOfBoundsException: When the program tries to access an array element using an invalid index (an index that is less than 0 or greater than or equal to the array's length), the Java Virtual Machine (JVM) throws the ArrayIndexOutOfBoundsException.

@@ -1,0 +1,16 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip13>java Main
+Exception in thread "main" java.lang.NullPointerException
+        at Main.main(Main.java:19)
+
+
+Explaination:
+Q: Why the Exception Occurs:
+A: 
+1) null Reference: The line String str = null; assigns the value null to the str variable. null means that the variable does not refer to any object in memory. It essentially means "no object."
+
+2) Dereferencing null: The line System.out.println(str.length()); attempts to call the length() method on the str variable. However, since str is null, there is no object to call the method on. This is called "dereferencing a null pointer."
+ 
+3) NullPointerException: When we try to access a member (method or variable) of an object that is null, the JVM throws a NullPointerException. This indicates that we're trying to perform an operation on something that doesn't exist.

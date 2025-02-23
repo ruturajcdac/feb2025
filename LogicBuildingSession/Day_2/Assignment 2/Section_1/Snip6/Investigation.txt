@@ -1,0 +1,28 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Snip6>javac Main.java
+Main.java:3: error: cannot find symbol
+                int x = y + 10;
+                        ^
+  symbol:   variable y
+  location: class Main
+1 error
+
+
+Error explaination:
+y is not declared or initialised before getting used.
+
+Explaination:
+Q: Why must variables be declared?
+A: 1)  Memory Allocation:
+When you declare a variable, you tell the compiler to allocate a specific amount of memory to store that variable's value. Without a declaration, the compiler doesn't know how much memory to reserve.
+   
+   2)Data Type Enforcement:
+Declarations specify the data type of a variable (e.g., int, float, String). This allows the compiler to perform type checking, ensuring that you're using the variable correctly. For example, it prevents you from accidentally trying to add a string to an integer.
+
+   3)Preventing Ambiguity:
+Without declarations, the compiler wouldn't know if y was intended to be an integer, a floating-point number, or some other data type. This ambiguity would make it impossible to generate correct machine code.
+
+  4)Code Clarity:
+Declaring variables makes your code more readable. It tells anyone reading the code what type of data a variable will hold.

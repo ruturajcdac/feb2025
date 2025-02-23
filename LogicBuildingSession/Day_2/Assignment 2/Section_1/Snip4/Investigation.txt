@@ -1,0 +1,29 @@
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Snip4>java Main
+Error: Main method not found in class Main, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+Error Explaination:
+The main method declaration is missing  String[] args 
+
+Error Solution:
+
+Defined the main method as:   public static void main(String[] args)
+
+
+
+Why is String[] args needed?
+String args is an array of strings of Java string class, i.e.,  java.lang.String class. The supplied command-line arguments are stored as an array of String objects in String args in java.
+
+Here, the string type is referred to as args(arguments). A string is typically a collection of characters. However, Java strings refer to an object representing a series of characters. In java, a string object is created using the java.lang.String class.
+
+It is worth noting that It's optional to name the array of strings as args. 
+We can use anything after the keyword String.
+
+We can name anything else we like. 
+
+For example, String CDAC[] or Sting yourname[].
+
+However, most coders prefer to name args because that's what other people do.

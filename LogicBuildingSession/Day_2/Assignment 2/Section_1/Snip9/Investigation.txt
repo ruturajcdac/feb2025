@@ -1,0 +1,42 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip9>javac Main.java
+Main.java:14: error: not a statement
+                int class = 10;
+                ^
+Main.java:14: error: ';' expected
+                int class = 10;
+                   ^
+Main.java:14: error: <identifier> expected
+                int class = 10;
+                         ^
+Main.java:15: error: <identifier> expected
+                System.out.println(class);
+                                  ^
+Main.java:15: error: illegal start of type
+                System.out.println(class);
+                                   ^
+Main.java:15: error: <identifier> expected
+                System.out.println(class);
+                                        ^
+Main.java:17: error: reached end of file while parsing
+}
+ ^
+7 errors
+
+
+Error explaination:
+The keyword class is used as an identifier and printed in SOP statement.
+Reserved keywords are words that have special meaning to the Java compiler. They are part of the language's syntax and structure. We cannot use them as identifiers (names for variables, methods, classes, interfaces, etc.).
+
+
+
+Explaination:
+Q: Why Reserved Keywords Can't Be Used as Identifiers:
+A: 
+ 1) Ambiguity: If we were allowed to use keywords as identifiers, the compiler would become confused. For example, if we had int class = 10;, the compiler wouldn't know if we meant class as a variable name or class as part of a class declaration (e.g., public class MyClass { ... }).
+ 
+ 2) Language Integrity: Reserved keywords are essential for defining the structure and behavior of the Java language. Allowing them to be used as identifiers would break the language's syntax rules and make it impossible for the compiler to correctly interpret the code.
+
+ 3) Preventing Errors: By disallowing keywords as identifiers, Java prevents a whole class of potential errors and makes code much more predictable.

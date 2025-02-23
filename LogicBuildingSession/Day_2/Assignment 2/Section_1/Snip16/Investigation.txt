@@ -1,0 +1,39 @@
+
+Error: 
+
+Q: Is the output what you expected?
+A: No, Calculation: 10 / 4 = 2 (the fractional part, 0.5, is discarded).
+
+Explaination:
+Integer Division: num (an int) is divided by 4 (also an int). In Java, when both operands of the division operator (/) are integers, integer division is performed. This means the result will be an integer, and any fractional part will be truncated (discarded).
+
+Solution:
+Ways to handle:
+1) Cast num to double:
+public class Main {
+    public static void main(String[] args) {
+        int num = 10;
+        double result = (double) num / 4;
+        System.out.println(result); // Output: 2.5
+    }
+}
+
+
+2) Use a double literal for 4:
+public class Main {
+    public static void main(String[] args) {
+        int num = 10;
+        double result = num / 4.0;
+        System.out.println(result); // Output: 2.5
+    }
+}
+
+3) Declare num as a double:
+
+public class Main {
+    public static void main(String[] args) {
+        double num = 10;
+        double result = num / 4;
+        System.out.println(result); // Output: 2.5
+    }
+}

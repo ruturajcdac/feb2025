@@ -1,0 +1,16 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip15>javac Main.java
+Main.java:20: error: incompatible types: possible lossy conversion from double to int
+                int result = num1 + num2;
+                                  ^
+1 error
+
+Explaination:
+Type Mismatch and Lossy Conversion: Java performs implicit type conversion in some situations, but it does not allow lossy conversions. A double (64-bit floating-point) has more precision than an int (32-bit integer). When you add an int and a double, the result is a double. The compiler recognizes that assigning this double result to an int variable (result) would potentially lose information (the fractional part). Java prevents this automatic lossy conversion to preserve data integrity.
+
+Solution:
+Ways to handle:
+1) Use double for the result
+2) Explicit casting

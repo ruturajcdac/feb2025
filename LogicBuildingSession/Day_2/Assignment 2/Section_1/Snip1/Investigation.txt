@@ -1,0 +1,19 @@
+Error: 
+
+Snip1.java:1: error: class Main is public, should be declared in a file named Main.java
+public class Main {
+       ^
+1 error
+
+
+Error Explaination:
+As the class Main is public, and the file name does not match with the class name, it should be corrected by renaming the file.
+
+Error Solution:
+After renaming the file name to Main.java a new error occurs as follows:
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Snip1>java Main
+Error: Main method is not static in class Main, please define the main method as:
+   public static void main(String[] args)
+
+So doing necessary changes.

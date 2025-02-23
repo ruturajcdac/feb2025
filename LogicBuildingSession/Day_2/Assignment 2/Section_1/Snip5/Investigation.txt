@@ -1,0 +1,20 @@
+Error: 
+
+No error
+
+Output:
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Snip5>java Main
+Main method with String[] args
+
+Explaination:
+Q: Can you have multiple main methods? 
+A: Yes, as per the given snippet it is observed that we can have multiple main methods, but only one of them can have the specific signature "public static void main(String[] args)". This is the entry point that the Java Virtual Machine (JVM) looks for when executing a program.
+
+Q: What do you observe?
+A: This is valid Java syntax because method overloading is allowed. Method overloading means you can have multiple methods with the same name but different parameter lists.
+
+JVM Entry Point:
+When you run the Java program, the JVM specifically searches for the public static void main(String[] args) method.
+The other main method (public static void main(int[] args)) is simply treated as another overloaded method. It will not be automatically executed by the JVM at startup.
+
+In summary, while you can define multiple methods named main, only the one with the String[] args signature serves as the program's entry point.

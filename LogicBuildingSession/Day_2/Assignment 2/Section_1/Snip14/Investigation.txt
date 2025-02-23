@@ -1,0 +1,26 @@
+
+Error: 
+
+E:\POST BE\CDAC\PrepCourse\Day 2\Assignment 2\Section_1\Snip14>javac Main.java
+Main.java:18: error: incompatible types: String cannot be converted to double
+                double num = "Hello";
+                             ^
+1 error
+
+Explaination:
+We are trying to assign string to a double variable.
+
+Solution:
+Q: Why Java Enforces Data Type Constraints:
+
+A: Java enforces data type constraints for several crucial reasons:
+
+1) Preventing Runtime Errors: Type checking at compile time helps prevent many common runtime errors.  If Java allowed you to assign a String to a double, the program would likely crash or produce incorrect results when it tried to perform arithmetic operations on num (which would contain text, not a number).
+
+2) Ensuring Data Integrity: Type constraints ensure that data is used consistently and correctly.  They prevent you from accidentally treating a piece of data as something it's not.  This helps maintain the integrity of the data and prevents unexpected behavior.
+
+3) Improving Code Reliability: By catching type errors early, Java makes programs more robust and less prone to crashes.  This leads to more reliable software.
+
+4) Facilitating Code Maintenance: Type declarations make code more readable and easier to understand.  When you see a variable declared as a double, you know that it's intended to hold a floating-point number.  This makes it easier to maintain and debug code.
+
+5) Security: Type safety can also contribute to security by preventing certain types of vulnerabilities that can occur when data is misused or misinterpreted.

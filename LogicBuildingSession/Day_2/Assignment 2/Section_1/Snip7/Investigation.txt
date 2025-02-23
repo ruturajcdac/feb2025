@@ -1,0 +1,31 @@
+
+Error: 
+
+Main.java:5: error: incompatible types: String cannot be converted to int
+                int x = "Hello";
+                        ^
+1 error
+
+
+Error explaination:
+The string "Hello" is getting assigned to a variable called x, which has a data type of int.
+
+
+
+Explaination:
+Java is a statically typed language, which means that the data type of a variable is determined at compile time.
+The compiler checks that the type of the value being assigned matches the declared type of the variable. In this case, it finds a mismatch: a String cannot be directly assigned to an int.
+
+Q: Why Java Enforces Type Safety:
+A: 1) Preventing Runtime Errors:
+Type safety helps to catch errors during compilation, before the program is run. This prevents many common runtime errors, such as trying to perform arithmetic operations on strings or treating a string as a number.
+	
+	
+	2) Improving Code Reliability:
+By catching type errors early, type safety makes Java programs more reliable and less prone to crashes.
+
+	3) Facilitating Code Maintenance:
+Type safety makes it easier to understand and maintain code. When you see a variable declared with a specific type, you know exactly what kind of data it will hold.
+
+	4) Security:
+Type safety can also contribute to security by preventing certain types of vulnerabilities, such as buffer overflows, that can occur when data is misused.
