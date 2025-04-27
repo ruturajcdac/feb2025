@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div style="margin: 40px 40px;">
+        <select id="myDropdown" style="margin-right: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <option value="1">RCB</option>
+            <option value="2">CSK</option>
+            <option value="3">MI</option>
+            <option value="4">KKR</option>
+            <option value="5">GT</option>
+            <option value="6">DC</option>
+            <option value="7">LSG</option>
+            <option value="8">PBKS</option>
+            <option value="9">SRH</option>
+            <option value="10">RR</option>
+        </select>
+
+        <button id="rmv-btn">Remove</button>
+    </div>
+    
+    
+
+
+
+    <script>
+        const btn = document.getElementById('rmv-btn');
+        const myList = document.getElementById('myDropdown');
+
+        
+
+        
+        btn.addEventListener('click', ()=>{
+            const selectedIndex = myList.selectedIndex; 
+
+            if(myList.options.length === 1){
+                btn.disabled = true;
+            }
+
+
+            myList.remove(selectedIndex);
+            console.log(`${selectedIndex + 1} removed`);
+        })
+    </script>
+</body>
+</html>

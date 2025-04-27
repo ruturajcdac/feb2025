@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .divs{
+            margin: 40px 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="myDiv" class="divs">
+        <form id="myForm">
+            First Name:  <input class="inpts" type="text" id="fname" placeholder="First Name"> <br> <br>
+            Last Name: <input class="inpts" type="text" id="lname"  placeholder="Last Name"> <br> <br>
+            Contact No.: <input class="inpts" type="text"  id="phone" placeholder="Contact No."> <br> <br>
+            Email ID: <input class="inpts" type="text"  id="email" placeholder="Email ID"> <br> <br>
+            <input type="submit" id="sub-button" value="Submit">
+            <input type="reset" name="" id="">
+        </form>
+    </div>
+
+    <div id="output" class="divs">
+
+    </div>
+    
+        
+
+
+    <script>
+        const myFormData = document.getElementById('myForm');
+        myFormData.addEventListener('submit', (event)=> {
+            event.preventDefault(); // stop form from submitting normally
+
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var phone = document.getElementById('phone').value;
+            var emailID = document.getElementById('email').value;
+
+            if(fname !== '' && lname !== '' && phone !== '' && emailID !== ''){
+
+                var output = `
+                <p><strong>First Name:</strong> ${fname}</p>
+                <p><strong>Last Name:</strong> ${lname}</p>
+                <p><strong>Contact No:</strong> ${phone}</p>
+                <p><strong>Email ID:</strong> ${emailID}</p>
+                `;
+                
+                document.getElementById('output').innerHTML = output;
+            }
+            else{
+                document.getElementById('output').innerHTML = "<p>Enter complete data!</p>";
+            }
+            
+        });
+</script>
+
+</body>
+</html>

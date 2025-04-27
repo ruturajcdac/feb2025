@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .parent{
+            display: flex;
+            flex-wrap: wrap; /* allows moving to next line if space is less */
+            justify-content: center;
+            gap: 20px; /* nice spacing between images */
+            padding: 20px;
+            text-align: left;
+                    
+        }
+
+        .children{
+            text-align: center;
+        }
+
+        #div1{
+            /* background-color: red; */
+            /* height: 60px; */
+            
+            
+        }
+
+        #div2{
+            /* background-color: blue; */
+            /* height: 20px; */
+        }
+
+        #div3{
+            /* background-color: yellow; */
+            /* height: 80px; */
+            /* align-self: flex-end; */
+        }
+
+        #div4{
+            /* background-color: orange; */
+            /* height: 40px; */
+        }
+
+        .myImages{
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Ensures images fill area without distortion */
+            border: 5px solid black; /* or whatever border you like */
+            border-radius: 8px; /* optional: smooth corners */
+            cursor: pointer; /* show hand on hover */
+            transition: all 1.5s ease; 
+
+
+        }
+
+        .myImages:hover {
+            width: auto;      /* Natural width */
+            height: auto;     /* Natural height */
+            max-width: 90vw;  /* limit max size to 90% of viewport width */
+            max-height: 90vh; /* limit max size to 90% of viewport height */
+            object-fit: contain; /* important: now show full image */
+            z-index: 10;
+            position: relative;
+            
+                    
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main-div" class="parent">
+        <div id="div1" class="children">
+            <a href="q_1.html" > <img src="Q1.jpg" alt="" class="myImages" ></a>
+            <p>Question 1</p>
+        </div>
+
+        <div id="div2" class="children" >
+            <a href="q_2.html" > <img src="Q2.jpg" alt="" class="myImages" ></a>
+            <p>Question 2</p>
+        </div>
+
+        <div id="div3" class="children">
+            <a href="q_3.html" > <img src="Q3.jpg" alt="" class="myImages" ></a>
+            <p>Question 3</p>
+        </div>
+
+
+        <div id="div4" class="children">
+            <a href="q_4.html" > <img src="Q4.jpg" alt="" class="myImages" ></a>
+            <p>Question 4</p>
+        </div>
+
+    </div>
+</body>
+</html>

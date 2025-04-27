@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div style="margin: 40px 40px;">
+        <p id="pointer-text" style="color: blue; text-decoration: underline;">[On mouse over here bold words of the following paragraph will be highlighted]</p>
+
+        <p id="sample-text">
+            <b>We</b> have just started <b>this</b> section for the users (<b>beginner</b> to intermediate) who <b>want</b> to work with <b>various</b> JavaScript <b>problems</b> and write scripts online to <b>test</b> their JavaScript <b>skill</b>.
+        </p>
+    </div>
+
+
+    <script>
+        const hovText = document.getElementById('pointer-text');
+        const opText = document.getElementById('sample-text');
+
+        hovText.addEventListener('mouseover', ()=>{
+            const bolds = document.querySelectorAll('b');
+            
+
+            for(let i = 0; i<bolds.length; i++){
+                bolds[i].style.color = "rgb(27, 235, 27)";
+                
+            }
+        })
+
+        hovText.addEventListener('mouseout', ()=>{
+            const bolds = document.querySelectorAll('b');
+            
+
+            for(let i = 0; i<bolds.length; i++){
+                bolds[i].style.color = "black";
+                
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>
