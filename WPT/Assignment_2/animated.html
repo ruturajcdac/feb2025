@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap; /* Allows moving to next line if space is less */
+            justify-content: center;
+            gap: 20px; /* Nice spacing between images */
+            padding: 20px;
+            text-align: left;
+            align-items: center; /* Vertically align items */
+            height: 500px;
+        }
+
+        .children {
+            text-align: center;
+            display: inline-block; /* Prevent images from collapsing */
+        }
+
+        .myImages {
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Ensures images fill area without distortion */
+            border: 5px solid black; /* Border for image */
+            border-radius: 8px; /* Optional: smooth corners */
+            cursor: pointer; /* Show hand on hover */
+            transition: transform 1s ease, border-width 0.3s ease, object-fit 0.5s ease; /* Smooth zoom effect */
+        }
+
+        .myImages:hover {
+            transform: scale(2.2) translateY(20%); /* Increased zoom and push image down by 20% */
+            border-width: 2px; /* Optional: smaller border when zoomed */
+            object-fit: contain; /* Shows the full image without cropping */
+        }
+
+        /* Make sure the zoomed image doesn't go outside the viewport */
+        .parent {
+            overflow: hidden; /* Hide anything overflowing the parent container */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main-div" class="parent">
+        <div id="div1" class="children">
+            <a href="q_1.html"><img src="Q1.jpg" alt="" class="myImages"></a>
+            <p>Question 1</p>
+        </div>
+
+        <div id="div2" class="children">
+            <a href="q_2.html"><img src="Q2.jpg" alt="" class="myImages"></a>
+            <p>Question 2</p>
+        </div>
+
+        <div id="div3" class="children">
+            <a href="q_3.html"><img src="Q3.jpg" alt="" class="myImages"></a>
+            <p>Question 3</p>
+        </div>
+
+        <div id="div4" class="children">
+            <a href="q_4.html"><img src="Q4.jpg" alt="" class="myImages"></a>
+            <p>Question 4</p>
+        </div>
+    </div>
+</body>
+</html>
